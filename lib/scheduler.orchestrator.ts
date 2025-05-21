@@ -7,6 +7,8 @@ import { CronCallback, CronJob, CronJobParams } from 'cron';
 import { CronOptions } from './decorators/cron.decorator';
 import { SchedulerRegistry } from './scheduler.registry';
 
+const crypto = require('crypto');
+
 type TargetHost = { target: Function };
 type TimeoutHost = { timeout: number };
 type RefHost<T> = { ref?: T };
